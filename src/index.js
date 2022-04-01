@@ -1,11 +1,10 @@
-import validator from './validator.js';
+  import validator from './validator.js';
+  console.log(validator);
 
-console.log(validator);
-
-function validarFormulario(){
-    let nombre = document.getElementById("nombre").value;
-     if (nombre == ""){
-      alert ("Ingresa tu nombre por favor");
-     }
-   }
-   
+  function validarFormulario(){
+      let nombre = document.getElementById("nombre").value;
+      if (nombre == ""){
+    alert ("Ingresa tu nombre por favor");
+ }
+}
+    

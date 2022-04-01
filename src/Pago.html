@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Andes Mountain</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>Ingresa tus datos personales</h1>
+    <h2>Asegurate de haberlos ingresados correctamente</h2>
+  
+  <!--datos de la tarjeta-->
+  
+    <form action="" >
+          <label for="nombre">Nombre :</label><br>
+          <input type="text" id="nombre"placeholder="Gabriela"><br>
+          <label for="apellidos">Apellidos :</label><br>
+          <input type="text" id="apellidos"placeholder=" Martinez Prieto"><br>
+          <label for="numtarjeta">Número de tarjeta :<br>
+          <input type="text" id="numtarjeta"maxlength="16" placeholder="**** **** **** ****"></label><br>
+          <label for="clave">CVV :</label><br>
+          <input type="text" id="clave" placeholder="***" 
+minlength="3" maxlength="3" required><br>
+    
+              Fecha de caducidad :<br>
+              <select>
+                <option selected disabled>Mes</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+          </select>
+  
+          <select>
+                <option selected disabled>Año</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+          </select><br>      
+      
+       Banco : <br> 
+        <select >
+          <option selected disabled>Seleccionar</option>
+          <option value="Banco de Chile">Banco de Chile</option>
+          <option value="Banco Estado">Banco Estado </option>
+          <option value="Santander">Santander</option>
+        </select><br>
+       
+
+    </form><br>
+  
+     <!--boton de pago -->
+    <div>
+     <input type="submit" onclick="validarFormulario();" value="Pagar" >
+    </div>
+  
+  <!--pie de pagina -->
+    <div>
+      <footer>
+        <p>© Copyright 2022 Andes Mountain</p>
+      </footer>
+    </div>
+  
+  <script src="index.js"></script>
+</body>
+
+</html>

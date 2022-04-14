@@ -1,75 +1,85 @@
-#div2, div3{
-    display: none;
-  }
-  
-    #html1{
-    background-image: url(Fotos/Inicio.jpg);
-    font-family: "Georgia";
-    font-size: large;
-    font-weight: 500;
-    text-align: center;
-    background-repeat: no-repeat;
-    }
-  
-    #html2{
-    background-image: url(Fotos/compra.jpg);
-    font-family: "Georgia";
-    font-size: large;
-    font-weight: 500;
-    text-align: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    }
-  
-    #html3{
-    background-image: url(Fotos/pago.jpg);
-    font-family: "Georgia";
-    font-size: large;
-    font-weight: 500;
-    background-repeat: no-repeat;
-    }
-  
-    a{
+/*class=link, te lleva siguiente página*/
+a{
+  background-color: #474d6b;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  border: solid;
+  position: relative;
+  bottom:-4px;
+  right:10px;
+}
+
+/* botón siguiente todos*/
+#boton1 {
     background-color: #474d6b;
+    font-family: "Courier";
     color: white;
+    font-size: large;
     padding: 10px 15px;
-    text-decoration: none;
-    text-align: center;
-    border: solid;
-    position: relative;
-    bottom:-4px;
-    right:10px;
-    }
-  
-    #boton1 {
-      background-color: #474d6b;
-      font-family: "Courier";
-      color: white;
-      font-size: large;
-      padding: 10px 15px;
-      border: solid; 
-    }
+    border: solid; 
+      }
 
-   .form{
-     text-align: center;
-     margin-top: 250px;
-    }
-  
-   .pie-pagina{
-    color: white;
-    text-align: right;
-    margin-top: 290px;
-    }
-  
-   .boton{
-   padding: 10px 10px;
-   left: 85%;
-   position: absolute;
-   margin-top: 100px;
-   }
-
-  .container{
-    display:flex;
-    align-items:flex-end;
-    justify-content: center;
+/*imagen fondo pag.de inicio*/
+#html1{
+  background-image: url(fotos/inicio.jpg);
+  font-family: "Georgia";
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+  background-repeat: no-repeat;
   }
+
+/*imagen fondo pag.carrito*/
+#html2{
+  background-image: url(fotos/carrito.jpg);
+  font-family: "Georgia";
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  }
+
+/*imagen fondo pag.formulario de pago*/
+#html3{
+  background-image: url(fotos/pago.jpg);
+  font-family: "Georgia";
+  font-size: large;
+  font-weight: 500;
+  background-repeat: no-repeat;
+  }
+
+/*Imagen de ultima pestana*/
+#html4{
+  background-image: url(fotos/final.jpg);
+}
+
+/* copyright*/
+.pie-pagina{
+  color: white;
+  text-align: right;
+  margin-top: 290px;
+  }
+
+/* botón pag.pago (ubicación abajo)*/  
+.container{
+  display:flex;
+  align-items:flex-end;
+  justify-content: center;
+ }
+/* botón pag.pago (ubicación abajo)*/  
+.boton{
+ padding: 10px 10px;
+ left: 85%;
+ position: absolute;
+ margin-top: 100px;
+ }
+/* botón pag.pago (ubicación centro)*/  
+.form{
+   text-align: center;
+   margin-top: 250px;
+ }
+
+ 

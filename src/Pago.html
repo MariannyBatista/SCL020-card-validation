@@ -9,23 +9,29 @@
 </head>
 
 <body id="html3">
-    <h1>Ingresa tus datos personales</h1>
-    <h2>Asegurate de haberlos ingresados correctamente</h2>
+    <h1>Formulario de pago</h1>
+    <h2>Ingresa tus datos personales,asegurate de haberlos ingresados correctamente.</h2>
   
   <!--datos de la tarjeta-->
   
     <form action="" >
           <label for="nombre">Nombre :</label><br>
-          <input type="text" id="nombre"placeholder="Gabriela"><br>
+          <input type="text" id="nombre" placeholder="Gabriela" 
+          autofocus required><br>
+      
           <label for="apellidos">Apellidos :</label><br>
-          <input type="text" id="apellidos"placeholder=" Martinez Prieto"><br>
+          <input type="text" id="apellidos"placeholder=" 
+          Martinez Prieto" required><br>
+      
           <label for="numtarjeta">Número de tarjeta :<br>
-          <input type="text" id="numtarjeta"maxlength="16" placeholder="**** **** **** ****"></label><br>
-          <label for="clave">CVV :</label><br>
+          <input type="text" id="tarjeta"maxlength="16" 
+          placeholder="**** **** **** ****"required></label><br>
+      
+          <label for="clave">CVV:</label><br>
           <input type="text" id="clave" placeholder="***" 
-minlength="3" maxlength="3" required><br>
+          minlength="3" maxlength="3"required><br>
     
-              Fecha de caducidad :<br>
+          <label>Fecha de caducidad :</label><br>
               <select>
                 <option selected disabled>Mes</option>
                 <option value="01">01</option>
@@ -55,22 +61,24 @@ minlength="3" maxlength="3" required><br>
                 <option value="2030">2030</option>
           </select><br>      
       
-       Banco : <br> 
+        <label>Banco :</label><br> 
         <select >
           <option selected disabled>Seleccionar</option>
           <option value="Banco de Chile">Banco de Chile</option>
           <option value="Banco Estado">Banco Estado </option>
           <option value="Santander">Santander</option>
-        </select><br>
-       
+          </select><br>
 
-    </form><br>
-  
-     <!--boton de pago -->
-    <div>
-     <input type="submit" onclick="validarFormulario();" value="Pagar" >
-    </div>
-  
+          <!-- botón validar tarjeta -->
+         <!-- <input type = "button" value = "Validar" id = "botonvalidar">>
+
+          <div id="validacion" ></div>
+          
+        <!--boton de pago -->
+        <input type="submit" value="Pagar" href="fin.html">
+
+    </form>
+ 
   <!--pie de pagina -->
     <div>
       <footer>
@@ -78,7 +86,19 @@ minlength="3" maxlength="3" required><br>
       </footer>
     </div>
   
-  <script src="index.js"></script>
+  <script src="script.js" type="module" ></script>
 </body>
 
 </html>
+
+<!-- números de tarjetas válidos
+
+const cards = {
+    card1: "6011111111111117",Discover
+    card2: "6011000990139424",Discover
+    card3: "5555555555554444",Mastercard
+    card4: "5105105105105100",Mastercard
+    card5: "4111111111111111",Visa
+    card6: "4012888888881881" Visa
+}
+ -->

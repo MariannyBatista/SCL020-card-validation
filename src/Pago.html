@@ -9,29 +9,33 @@
 </head>
 
 <body id="html3">
-    <h1>Formulario de pago</h1>
-    <h2>Ingresa tus datos personales,asegurate de haberlos ingresados correctamente.</h2>
-  
+  <header>
+      <div class="txtform">
+          <h1>Formulario de pago</h1>
+          <h2>Ingresa tus datos personales,<br> asegúrate de haberlos ingresados correctamente.</h2>
+      </div>
+</header>
   <!--datos de la tarjeta-->
   
     <form action="" >
+      <div>
           <label for="nombre">Nombre :</label><br>
           <input type="text" id="nombre" placeholder="Gabriela" 
-          autofocus required><br>
-      
+          autofocus class="campotxt" required><br>
+      </div>
           <label for="apellidos">Apellidos :</label><br>
-          <input type="text" id="apellidos" placeholder="Martinez Prieto" required><br>
+          <input type="text" id="apellidos" placeholder="Martinez Prieto" class="campotxt" required><br>
       
           <label for="numtarjeta">Número de tarjeta :<br>
           <input type="text" id="tarjeta" maxlength="16" 
-          placeholder="**** **** **** ****" required></label><br>
+          placeholder="**** **** **** ****" class="campotxt" required></label><br>
       
           <label for="clave">CVV:</label><br>
           <input type="text" id="clave" placeholder="***" 
-          minlength="3" maxlength="3" required><br>
+          minlength="3" maxlength="3" class="campotxt"required><br>
     
           <label>Fecha de caducidad :</label><br>
-              <select>
+              <select class="seleccionar">
                 <option selected disabled>Mes</option>
                 <option value="01">01</option>
                 <option value="02">02</option>
@@ -47,7 +51,7 @@
                 <option value="12">12</option>
           </select>
   
-          <select>
+          <select class="seleccionar">
                 <option selected disabled>Año</option>
                 <option value="2022">2022</option>
                 <option value="2023">2023</option>
@@ -61,27 +65,31 @@
           </select><br>      
       
         <label>Banco :</label><br> 
-        <select >
+        <select class="seleccionar" >
           <option selected disabled>Seleccionar</option>
           <option value="Banco de Chile">Banco de Chile</option>
           <option value="Banco Estado">Banco Estado </option>
           <option value="Santander">Santander</option>
           </select><br>
 
-          <!-- botón validar tarjeta -->
-         <!-- <input type = "button" value = "Validar" id = "botonvalidar">>
+        <!-- botón validar tarjeta -->
+          <div class="btncontenedor">
+              <input class="btnvalidar" type = "button" value = "Validar" id = "botonvalidar">
+        </div>
 
           <div id="validacion" ></div>
           
         <!--boton de pago -->
-        <input type="submit" value="Pagar" href="fin.html">
+        <div class="btnpago-contenedor">
+            <input class="btnpagar" type="submit" value="Pagar" href="fin.html">
+        </div>
 
     </form>
  
   <!--pie de pagina -->
     <div>
       <footer>
-        <p>© Copyright 2022 Andes Mountain</p>
+        <p>© Copyright 2022 Andes Mountain </p>
       </footer>
     </div>
   
